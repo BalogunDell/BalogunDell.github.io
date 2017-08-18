@@ -1,0 +1,303 @@
+html{
+	margin: 0;
+	height: 100%;
+}
+
+h1{
+	margin: 0;
+	padding: 0;
+}
+*.col, *row {
+	padding: 0;
+}
+
+.converall {
+	background: url('../images/newbg.png');
+	background-size: cover;
+	min-height: 100%;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+nav {
+	background-color: transparent;
+	height: 0px;
+}
+.side-nav {
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 200px;
+	
+}
+
+#main_nav li a {
+	color: white;
+	margin-top: 10px;
+}
+
+#main_nav li a:hover, ul li a:hover {
+	background-color: white;
+	color: #0F488A;
+}
+
+.content-area {
+	padding-bottom: 30px;
+	padding-top: 30px;
+	height: auto;
+	width: 80%;
+	margin-top: 15%;
+	text-align: center;
+}
+.content-area h1{
+	color: white;
+	font-family: sans-serif; 
+	font-size: 60px;
+}
+
+.content-area p{
+	margin-top: 5%; 
+	color: white;
+}
+.content-area button{
+	margin-top: 5%;  
+	background: #017eb7;
+	margin-left: 2%;
+	margin-right: 2%;
+	min-width: 20%;
+	height: 50px;
+	-webkit-transition: background 0.5s;
+	-o-webkit-transition: background 0.5s;
+	-ms-webkit-transition: background 0.5s;
+}
+.content-area button:hover{
+	background: white;
+	color: #017eb7;
+}
+
+
+/*******************************************************/
+/****Content Area Media Queries for phones and tabs*****/
+/*******************************************************/
+
+@media screen and (min-width: 80px) and (max-width: 170px){
+	.content-area{
+		margin-top: 35%;
+	}
+
+	.content-area h1{
+		font-size: 30px
+	}
+
+}
+
+
+@media screen and (min-width: 170px) and (max-width: 400px){
+	.content-area{
+		margin-top: 37%;
+	}
+
+	.content-area h1{
+		font-size: 30px
+	}
+
+	.content-area p{
+		width: 100%;
+	}
+
+}
+
+
+@media screen and (min-width: 401px) and (max-width: 600px){
+	.content-area{
+		margin-top: 35%;
+	}
+
+	.content-area h1{
+		font-size: 50px
+	}
+
+	.content-area p{
+		width: 100%;
+	}
+}
+
+
+@media screen and (min-width: 601px) and (max-width: 800px){
+	.content-area{
+		margin-top: 25%;
+		
+	}
+
+	.content-area p{
+		font-size: 150%;
+
+	}
+
+	.content-area h1{
+		font-size: 80px;
+	}
+
+	.content-area button {
+		height: 100%;
+		width: auto;
+	}
+
+}
+
+@media only screen and (min-width: 801px) and (max-width: 1100px){
+	.content-area {
+		margin-top: 35%;
+	}
+
+	.content-area p{
+		font-size: 30px;
+		width: 100%;
+	}
+
+	.content-area h1{
+		font-size: 80px;
+	}
+
+	.content-area button {
+		height: 100%;
+		width: auto;
+	}
+
+}
+
+
+@media only screen and (min-width: 1200px) and (max-width: 1400px){
+	.content-area {
+		margin-top: 0%;
+	}
+
+	.content-area p{
+		font-size: 30px;
+		width: 100%;
+	}
+
+	.content-area h1{
+		font-size: 80px;
+	}
+}
+
+/******************/
+/*Books styling */
+/******************/
+.books{
+	margin: auto !important;
+}
+
+.home-books{
+	margin-top: 4%;
+
+}
+
+.home-message{
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 20px;
+
+}
+
+.books-holder-title h1{
+	font-size: 40px;
+	padding: 0;
+	margin:20px;
+	color: #0F488A;
+}
+
+.search-filter{
+	margin: 20px;
+}
+
+.books-holder{
+	/*height: 350px;*/
+	margin: 0 auto;
+}
+
+.book-holder-prot{
+	max-height: 349px;
+	max-width: 242px;
+	border-radius: 5px;
+	padding-bottom: 15px;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.09);
+	margin: auto;
+	
+}
+
+.book-title{
+	padding-top: 5px;
+	font-size: 10px;
+}
+
+.book-holder-prot .img-holder{
+	max-height: 250px;
+	max-width: 220px;
+	margin: 0 auto;
+	margin-top: 7px;
+	height:250px;
+	position: relative;
+}
+
+.book-holder-prot img{
+	max-height: 250px;
+	max-width: 200px;
+	margin: 0 auto;
+	margin-top: 7px;
+	min-height: 25px;
+	min-width: auto;
+}
+
+.book-holder-prot .img-overlay{
+	max-height: 91.2px;
+	max-width: 220px;
+	position: absolute;
+	right:0;
+	left: 0;
+	bottom: -7px;
+	overflow: hidden;
+	height: 0%; 
+	-webkit-transition: height 0.5s;
+	background: #0F488A;;
+	color: white;
+	display: flex;
+	align-items:center;
+	justify-content:center;
+}
+
+
+
+.book-holder-prot:hover .img-overlay {
+	height: 100%;
+}
+
+
+.book-holder-prot:hover {
+	box-shadow: 0 2px 21px 0 rgba(0,0,0,0.19);
+}
+
+.book-holder-prot .dets {
+	max-height: 70px;
+	max-width:200px;
+	margin:15px auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+
+.book-holder-prot .dets p {
+	margin: auto;
+	text-align: center;	
+}
+
+.book-holder-prot .dets buton {
+	background-color: #0F488A;
+}
+
+.page-footer {
+	background-color: #0F488A;
+	text-align: center;
+	padding-bottom: 10px;
+}
